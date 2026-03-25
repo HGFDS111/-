@@ -311,9 +311,16 @@ img {
 .event_card-category {
   margin: 8px 0 0;
   font-size: 14px;
-  line-height: 1.4;
   color: #707070;
+ height: 40px;
+  display: flex;
+  align-items: center;
+}
 
+/* карточки 5 и 6 */
+.event_card:nth-child(5) .event_card-category,
+.event_card:nth-child(6) .event_card-category {
+  height: 20px;
 }
 
 .event_card-date {
@@ -393,6 +400,53 @@ img {
   flex-shrink: 0;
 }
 
+.event_card-titleAmazing {
+    margin: 12px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #212121;
+    max-width: 220px;
+}
+
+.event_card-titleVision {
+    margin: 12px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #212121;
+    max-width: 220px;
+}
+
+.event_card-titleSignificant {
+    margin: 12px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #212121;
+    max-width: 220px;
+}
+
+.event_card-titleFREE {
+    margin: 12px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #212121;
+    max-width: 220px;
+}
+
+.upcoming_events .event_card-category {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.upcoming_events .event_card:nth-child(2) .event_card-category,
+.upcoming_events .event_card:nth-child(3) .event_card-category {
+  height: 20px;
+}
+
 .event_card-date,
 .meta_item {
   display: flex;
@@ -434,11 +488,9 @@ img {
 }
 
 .join_meetup_content {
-  max-width: 540px;
-  padding: 36px 0 36px 36px;
-    background: #f0f7f8;
-
-}
+  max-width: 700px;
+  padding: 16px 0 16px 24px;
+    }
 
 .join_meetup_title {
   margin: 0;
@@ -454,7 +506,8 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  padding: 40px;
+  padding: 24px;
+  width: 100%;
 }
 
 .join_meetup_text {
@@ -474,6 +527,8 @@ img {
   border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
+   width: 200px; 
+  text-align: center;
 }
 
 .join_meetup_image {
