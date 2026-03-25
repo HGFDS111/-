@@ -196,7 +196,7 @@ img {
   padding: 0 180px;
 }
 .events_top {
-  
+  display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 24px;
