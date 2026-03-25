@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./source/output.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header_container">
+
+      <a class="header_logo" href="index.html">
+        <img src="./source/icons/logo.png" alt="Meetup logo">
+      </a>
+
+      <form class="header_search" action="#">
+      <div class="header_search-field header_search-field--events">
+        <img class="search_icon" src="./source/icons/search.svg" alt="">
+        <input type="text" placeholder="Search events"> 
+      </div>
+
+      <div class="header_search-field header_search-field--location">
+        <input type="text" value="Mountain View, CA">
+        </div>
+
+        <button class="header_search-btn" type="submit">
+          <img src="./source/icons/search-white.svg" alt="">
+        </button>
+      </form>
+
+     <nav class="header_nav">
+  <a class="header_lang" href="#">
+    <svg xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="#212121"
+         stroke-width="1.5">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"/>
+    </svg>
+    English
+  </a>
+
+  <a class="header_login" href="#">Log in</a>
+  <a class="header_signup" href="#">Sign up</a>
+</nav>
+
+    </div>
+  </header>
+
+<main class="events_page">
+  <div class="events_page_container">
+
+    <section class="events_list_section">
+      <h1 class="events_page_title">Events near New York, NY</h1>
+
+      <a class="events_page_tab" href="#">Events</a>
+
+      <div class="events_filters">
+        <select id="typeFilter" class="events_filter-select">
+          <option value="all">Any type</option>
+          <option value="online">Online</option>
+          <option value="offline">Offline</option>
+        </select>
+
+        <select id="distanceFilter" class="events_filter-select">
+          <option value="all">Any distance</option>
+          <option value="5">5 km</option>
+          <option value="10">10 km</option>
+          <option value="15">15 km</option>
+          <option value="25">25 km</option>
+          <option value="50">50 km</option>
+          <option value="75">75 km</option>
+          <option value="100">100 km</option>
+        </select>
+
+        <select id="categoryFilter" class="events_filter-select">
+          <option value="all">Any category</option>
+          <option value="Social Activities">Social Activities</option>
+          <option value="Hobbies and Passions">Hobbies and Passions</option>
+          <option value="Health and Wellbeing">Health and Wellbeing</option>
+          <option value="Business">Business</option>
+          <option value="Technology">Technology</option>
+        </select>
+
+        <select id="dayFilter" class="events_filter-select">
+          <option value="all">Any day</option>
+          <option value="2024-03-13T11:00">Mar 13, 11:00 AM</option>
+          <option value="2024-03-14T11:00">Mar 14, 11:00 AM</option>
+          <option value="2024-03-14T20:00">Mar 14, 8:00 PM</option>
+          <option value="2024-03-16T14:00">Mar 16, 2:00 PM</option>
+          <option value="2024-03-23T11:30">Mar 23, 11:30 AM</option>
+          <option value="2024-03-30T14:00">Mar 30, 2:00 PM</option>
+        </select>
+      </div>
+
+      <div id="eventsList" class="events_list"></div>
+    </section>
+
+    <aside class="events_map">
+      <p class="events_map_text">Find events near</p>
+      <h2 class="events_map_title">New York, NY</h2>
+
+      <div class="events_map_box">
+        <img src="./source/images/map.png" alt="Map">
+        <a class="events_map_btn" href="#">Browse in map</a>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+
+
+  <footer class="footer">
+  <div class="footer_container">
+
+    <div class="footer_top">
+      <p class="footer_top-text">Create your own Meetup group.</p>
+      <a class="footer_top-btn" href="#">Get Started</a>
+    </div>
+
+    <div class="footer_links">
+      <div class="footer_column">
+        <h3>Your Account</h3>
+        <a href="#">Sign up</a>
+        <a href="#">Log in</a>
+        <a href="#">Help</a>
+        <a href="#">Become an Affiliate</a>
+      </div>
+
+      <div class="footer_column">
+        <h3>Discover</h3>
+        <a href="#">Groups</a>
+        <a href="#">Calendar</a>
+        <a href="#">Topics</a>
+        <a href="#">Cities</a>
+        <a href="#">Online Events</a>
+        <a href="#">Local Guides</a>
+        <a href="#">Make Friends</a>
+      </div>
+
+      <div class="footer_column">
+        <h3>Meetup</h3>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Meetup Pro</a>
+        <a href="#">Careers</a>
+        <a href="#">Apps</a>
+        <a href="#">Podcast</a>
+      </div>
+    </div>
+
+    <div class="footer_socials">
+      <div class="footer_socials-left">
+        <p class="footer_socials-title">Follow us</p>
+
+        <div class="footer_icons">
+          <img src="./source/icons/facebook.png" alt="Facebook">
+          <img src="./source/icons/twitter.png" alt="Twitter">
+          <img src="./source/icons/youtube.png" alt="YouTube">
+          <img src="./source/icons/instagram.png" alt="Instagram">
+          <img src="./source/icons/tiktok.png" alt="TikTok">
+        </div>
+      </div>
+
+      <div class="footer_apps">
+        <img src="./source/icons/google-play.png" alt="Google Play">
+        <img src="./source/icons/app-store.png" alt="App Store">
+      </div>
+    </div>
+
+    <div class="footer_bottom">
+      <span>© 2024 Meetup</span>
+      <a href="#">Terms of Service</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Do Not Sell or Share My Personal Data</a>
+      <a href="#">Cookie Policy</a>
+      <a href="#">Help</a>
+    </div>
+
+  </div>
+</footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>

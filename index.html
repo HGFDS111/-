@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./source/output.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header_container">
+
+      <a class="header_logo" href="index.html">
+        <img src="./source/icons/logo.png" alt="Meetup logo">
+      </a>
+
+      <form class="header_search" action="#">
+      <div class="header_search-field header_search-field--events">
+        <img class="search_icon" src="./source/icons/search.svg" alt="">
+        <input type="text" placeholder="Search events"> 
+      </div>
+
+      <div class="header_search-field header_search-field--location">
+        <input type="text" value="Mountain View, CA">
+        </div>
+
+        <button class="header_search-btn" type="submit">
+          <img src="./source/icons/search-white.svg" alt="">
+        </button>
+      </form>
+
+     <nav class="header_nav">
+  <a class="header_lang" href="#">
+    <svg xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="#212121"
+         stroke-width="1.5">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"/>
+    </svg>
+    English
+  </a>
+
+  <a class="header_login" href="#">Log in</a>
+  <a class="header_signup" href="#">Sign up</a>
+</nav>
+
+    </div>
+  </header>
+
+
+  <main>
+    <section class="hero">
+      <div class="hero_container">
+
+        <div class="hero_content">
+        <h1 class="hero_title">
+          The people platform—Where interests become friendships
+        </h1>
+
+        <p class="hero_text">
+          Whatever your interest, from hiking and reading to networking and skill sharing,
+there are thousands of people who share it on Meetup. Events are happening
+every day—sign up to join the fun.
+        </p>
+        <a class="hero_btn" href="events.html">Join Meetup</a>
+      </div>
+
+      <div class="hero_image">
+        <img src="./source/images/hero.png" alt="People meeting illustration">
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="events">
+    <div class="events_container">
+
+      <div class="events_top">
+        <div class="events_heading">
+          <h2 class="events_title">Events near</h2>
+          
+          <div class="events_location">Mountain View, CA</div>
+        <a class="events_link" href="events.html">See all events</a>
+      </div>
+
+   <div class="events_grid">
+
+  <!-- 1 -->
+  <article class="event_card">
+    <img src="./source/images/event-1.png" alt="">
+    <h3 class="event_card-title1">Day Trading Idea and Strategy</h3>
+    <p class="event_card-category">Business (5 km)</p>
+    <p class="event_card-date">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+        <path d="M8 3v3M16 3v3M4 9h16M6 5h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/>
+      </svg>
+      MON, MAR 18 · 7:00 PM PDT
+    </p>
+    <div class="event_card-meta">
+      <span class="meta_item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.8">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M8 12.5l2.5 2.5L16 9.5"/>
+        </svg>
+        1 going
+      </span>
+      <span class="meta_item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+          <path d="M4 8.5a2 2 0 0 0 2-2h12a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H6a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4v-2z"/>
+          <path d="M12 7v10" stroke-dasharray="1.5 1.5"/>
+        </svg>
+        Free
+      </span>
+    </div>
+  </article>
+
+  <!-- 2 -->
+  <article class="event_card">
+    <img src="./source/images/event-2.png" alt="">
+    <h3 class="event_card-title2">Let's Talk Networking: JPMorgan Chase in Palo Alto</h3>
+    <p class="event_card-category">Business (25 km)</p>
+    <p class="event_card-date">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+        <path d="M8 3v3M16 3v3M4 9h16M6 5h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/>
+      </svg>
+      TUE, MAR 19 · 5:00 PM PDT
+    </p>
+    <div class="event_card-meta">
+      <span class="meta_item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.8">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M8 12.5l2.5 2.5L16 9.5"/>
+        </svg>
+        41 going
+      </span>
+      <span class="meta_item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+          <path d="M4 8.5a2 2 0 0 0 2-2h12a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H6a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4v-2z"/>
+          <path d="M12 7v10" stroke-dasharray="1.5 1.5"/>
+        </svg>
+        Free
+      </span>
+    </div>
+  </article>
+
+  <!-- 3 -->
+  <article class="event_card">
+  <img src="./source/images/event-3.png" alt="">
+  <h3 class="event_card-title3">Tech Talks & Quiz: Next-
+Gen Database Solutions
+for Emerging Use Cases</h3>
+  <p class="event_card-category">Technology</p>
+  <p class="event_card-date">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+      <path d="M8 3v3M16 3v3M4 9h16M6 5h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/>
+    </svg>
+    WED, MAR 13 · 6:00 PM PDT
+  </p>
+  <div class="event_card-meta">
+    <span class="meta_item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.8">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M8 12.5l2.5 2.5L16 9.5"/>
+      </svg>
+      40 going
+    </span>
+    <span class="meta_item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+        <path d="M4 8.5a2 2 0 0 0 2-2h12a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H6a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4v-2z"/>
+        <path d="M12 7v10" stroke-dasharray="1.5 1.5"/>
+      </svg>
+      Free
+    </span>
+  </div>
+</article>
+
+  <!-- 4 -->
+  <article class="event_card">
+  <img src="./source/images/event-4.png" alt="">
+  <h3 class="event_card-title4">INFORMS San Francisco Chapter In-Person Event</h3>
+  <p class="event_card-category">Health and Wellbeing (50 km)</p>
+  <p class="event_card-date">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+      <path d="M8 3v3M16 3v3M4 9h16M6 5h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/>
+    </svg>
+    THU, MAR 28 · 5:00 PM PDT
+  </p>
+  <div class="event_card-meta">
+    <span class="meta_item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.8">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M8 12.5l2.5 2.5L16 9.5"/>
+      </svg>
+      41 going
+    </span>
+    <span class="meta_item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+        <path d="M4 8.5a2 2 0 0 0 2-2h12a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H6a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4v-2z"/>
+        <path d="M12 7v10" stroke-dasharray="1.5 1.5"/>
+      </svg>
+      Free
+    </span>
+  </div>
+</article>
+
+  <!-- 5 -->
+<article class="event_card">
+  <img src="./source/images/event-5.png" alt="">
+  <h3 class="event_card-title5">AI Wednesdays - Meet and Greet!</h3>
+  <p class="event_card-category">Technology (5 km)</p>
+  <p class="event_card-date">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+      <path d="M8 3v3M16 3v3M4 9h16M6 5h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/>
+    </svg>
+    WED, MAR 13 · 6:30 PM PDT
+  </p>
+  <div class="event_card-meta">
+    <span class="meta_item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.8">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M8 12.5l2.5 2.5L16 9.5"/>
+      </svg>
+      29 going
+    </span>
+    <span class="meta_item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+        <path d="M4 8.5a2 2 0 0 0 2-2h12a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H6a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4v-2z"/>
+        <path d="M12 7v10" stroke-dasharray="1.5 1.5"/>
+      </svg>
+      Free
+    </span>
+  </div>
+</article>
+
+  <!-- 6 -->
+ <article class="event_card">
+  <img src="./source/images/event-6.png" alt="">
+  <h3 class="event_card-title6">ROS By-The-Bay March 2024</h3>
+  <p class="event_card-category">Social Activities</p>
+  <p class="event_card-date">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+      <path d="M8 3v3M16 3v3M4 9h16M6 5h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/>
+    </svg>
+    THU, MAR 21 · 6:00 PM PDT
+  </p>
+  <div class="event_card-meta">
+    <span class="meta_item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.8">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M8 12.5l2.5 2.5L16 9.5"/>
+      </svg>
+      51 going
+    </span>
+    <span class="meta_item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+        <path d="M4 8.5a2 2 0 0 0 2-2h12a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H6a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4v-2z"/>
+        <path d="M12 7v10" stroke-dasharray="1.5 1.5"/>
+      </svg>
+      Free
+    </span>
+  </div>
+</article>
+
+  <!-- 7 -->
+ <article class="event_card">
+  <img src="./source/images/event-7.png" alt="">
+  <h3 class="event_card-title7">Free Christian Singles' Dinner</h3>
+  <p class="event_card-category">Hobbies and Passions (10 km)</p>
+  <p class="event_card-date">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+      <path d="M8 3v3M16 3v3M4 9h16M6 5h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/>
+    </svg>
+    FRI, MAR 29 · 6:00 PM PDT
+  </p>
+  <div class="event_card-meta">
+    <span class="meta_item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.8">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M8 12.5l2.5 2.5L16 9.5"/>
+      </svg>
+      11 going
+    </span>
+    <span class="meta_item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+        <path d="M4 8.5a2 2 0 0 0 2-2h12a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H6a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4v-2z"/>
+        <path d="M12 7v10" stroke-dasharray="1.5 1.5"/>
+      </svg>
+      Free
+    </span>
+  </div>
+</article>
+
+  <!-- 8 -->
+<article class="event_card">
+  <img src="./source/images/event-8.png" alt="">
+  <h3 class="event_card-title8">In-person: Deep Dive into RAG Architectures (Food served)</h3>
+  <p class="event_card-category">Hobbies and Passions (50 km)</p>
+  <p class="event_card-date">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+      <path d="M8 3v3M16 3v3M4 9h16M6 5h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/>
+    </svg>
+    THU, MAR 14 · 5:00 PM PDT
+  </p>
+  <div class="event_card-meta">
+    <span class="meta_item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.8">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M8 12.5l2.5 2.5L16 9.5"/>
+      </svg>
+      16 going
+    </span>
+    <span class="meta_item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+        <path d="M4 8.5a2 2 0 0 0 2-2h12a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H6a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4v-2z"/>
+        <path d="M12 7v10" stroke-dasharray="1.5 1.5"/>
+      </svg>
+      Free
+    </span>
+  </div>
+</article>
+</div>
+</div>
+  </section>
+
+ <section class="upcoming_events">
+  <div class="upcoming_events_container">
+
+    <div class="upcoming_events_top">
+      <h2 class="upcoming_events_title">Upcoming online events</h2>
+      <a class="upcoming_events_link" href="events.html">See all events</a>
+    </div>
+
+    <div class="upcoming_events_grid">
+      <article class="event_card">
+        <img src="./source/images/online-1.png" alt="Amazing On-Demand Summit">
+        <h3 class="event_card-title">Amazing On-Demand 15 Min Interviews with Top Coaches and Speakers</h3>
+        <p class="event_card-category">Business (25 km)</p>
+        <p class="event_card-date">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+            <path d="M8 3v3M16 3v3M4 9h16M6 5h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/>
+          </svg>
+          THU, MAR 14 · 6:00 PM PDT
+        </p>
+        <div class="event_card-meta">
+          <span class="meta_item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.8">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M8 12.5l2.5 2.5L16 9.5"/>
+            </svg>
+            3 going
+          </span>
+          <span class="meta_item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+              <path d="M4 8.5a2 2 0 0 0 2-2h12a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H6a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4v-2z"/>
+              <path d="M12 7v10" stroke-dasharray="1.5 1.5"/>
+            </svg>
+            Free
+          </span>
+        </div>
+      </article>
+
+      <article class="event_card">
+        <img src="./source/images/online-2.png" alt="Vision Pro Developers">
+        <h3 class="event_card-title">Vision Pro Developers Online Meetup</h3>
+        <p class="event_card-category">Technology</p>
+        <p class="event_card-date">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+            <path d="M8 3v3M16 3v3M4 9h16M6 5h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/>
+          </svg>
+          WED, MAR 13 · 7:00 PM PDT
+        </p>
+        <div class="event_card-meta">
+          <span class="meta_item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.8">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M8 12.5l2.5 2.5L16 9.5"/>
+            </svg>
+            51 going
+          </span>
+          <span class="meta_item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+              <path d="M4 8.5a2 2 0 0 0 2-2h12a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H6a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4v-2z"/>
+              <path d="M12 7v10" stroke-dasharray="1.5 1.5"/>
+            </svg>
+            Free
+          </span>
+        </div>
+      </article>
+
+      <article class="event_card">
+        <img src="./source/images/online-3.png" alt="Significant Musical Moments">
+        <h3 class="event_card-title">Significant Musical Moments</h3>
+        <p class="event_card-category">Hobbies and Passions (10 km)</p>
+        <p class="event_card-date">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+            <path d="M8 3v3M16 3v3M4 9h16M6 5h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/>
+          </svg>
+          WED, MAR 13 · 6:00 PM PDT
+        </p>
+        <div class="event_card-meta">
+          <span class="meta_item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.8">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M8 12.5l2.5 2.5L16 9.5"/>
+            </svg>
+            16 going
+          </span>
+          <span class="meta_item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+              <path d="M4 8.5a2 2 0 0 0 2-2h12a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H6a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4v-2z"/>
+              <path d="M12 7v10" stroke-dasharray="1.5 1.5"/>
+            </svg>
+            Free
+          </span>
+        </div>
+      </article>
+
+      <article class="event_card">
+        <img src="./source/images/online-4.png" alt="Power BI Webinar">
+        <h3 class="event_card-title">FREE Webinar: Introduction to Power BI</h3>
+        <p class="event_card-category">Technology</p>
+        <p class="event_card-date">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+            <path d="M8 3v3M16 3v3M4 9h16M6 5h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/>
+          </svg>
+          THU, MAR 14 · 5:30 PM PDT
+        </p>
+        <div class="event_card-meta">
+          <span class="meta_item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.8">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M8 12.5l2.5 2.5L16 9.5"/>
+            </svg>
+            33 going
+          </span>
+          <span class="meta_item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.7">
+              <path d="M4 8.5a2 2 0 0 0 2-2h12a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H6a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4v-2z"/>
+              <path d="M12 7v10" stroke-dasharray="1.5 1.5"/>
+            </svg>
+            Free
+          </span>
+        </div>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+<section class="join_meetup">
+  <div class="join_meetup_container">
+    <div class="join_meetup_card">
+
+      <div class="join_meetup_content">
+        <h2 class="join_meetup_title">Join Meetup</h2>
+
+        <p class="join_meetup_text">
+          People use Meetup to meet new people, learn new things, find support, get out of their comfort zones, and pursue their passions, together. Membership is free.
+        </p>
+
+        <a class="join_meetup_btn" href="#">Sign up</a>
+      </div>
+
+      <div class="join_meetup_image">
+        <img src="./source/images/join-meetup.png" alt="Join Meetup illustration">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="categories">
+  <div class="categories_container">
+    <h2 class="categories_title">Explore top categories</h2>
+
+    <div class="categories_grid">
+      <article class="category_card">
+        <img src="./source/icons/category-travel.svg.png" alt="Travel and Outdoor">
+        <p>Travel and Outdoor</p>
+      </article>
+
+      <article class="category_card">
+        <img src="./source/icons/category-social.svg.png" alt="Social Activities">
+        <p>Social Activities</p>
+      </article>
+
+      <article class="category_card">
+        <img src="./source/icons/categories-hobbies.svg.png" alt="Hobbies and Passions">
+        <p>Hobbies and Passions</p>
+      </article>
+
+      <article class="category_card">
+        <img src="./source/icons/category-sports.svg.png" alt="Sports and Fitness">
+        <p>Sports and Fitness</p>
+      </article>
+
+      <article class="category_card">
+        <img src="./source/icons/category-health.svg.png" alt="Health and Wellbeing">
+        <p>Health and Wellbeing</p>
+      </article>
+
+      <article class="category_card">
+        <img src="./source/icons/category-tech.svg.png" alt="Technology">
+        <p>Technology</p>
+      </article>
+
+      <article class="category_card">
+        <img src="./source/icons/category-art.svg.png" alt="Art and Culture">
+        <p>Art and Culture</p>
+      </article>
+
+      <article class="category_card">
+        <img src="./source/icons/category-games.svg.png" alt="Games">
+        <p>Games</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="cities">
+  <div class="cities_container">
+    <h2 class="cities_title">Popular cities on Meetup</h2>
+
+    <p class="cities_text">
+      Looking for fun things to do near you? See what Meetup organizers are planning in cities around the country.
+    </p>
+
+    <div class="cities_grid">
+      <article class="city_card">
+        <img src="./source/images/city-1.png" alt="New York">
+        <h3>New York</h3>
+      </article>
+
+      <article class="city_card">
+        <img src="./source/images/city-2.png" alt="San Francisco">
+        <h3>San Francisco</h3>
+      </article>
+
+      <article class="city_card">
+        <img src="./source/images/city-3.png" alt="Chicago">
+        <h3>Chicago</h3>
+      </article>
+
+      <article class="city_card">
+        <img src="./source/images/city-4.png" alt="Nashville">
+        <h3>Nashville</h3>
+      </article>
+
+      <article class="city_card">
+        <img src="./source/images/city-5.png" alt="Miami">
+        <h3>Miami</h3>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section class="how">
+  <div class="how_container">
+    <h2 class="how_title">How Meetup works</h2>
+
+    <div class="how_grid">
+      <article class="how_card">
+        <img src="./source/icons/search-big.png" alt="">
+        <div class="how_content">
+          <h3 class="how_card-title">Discover events and groups</h3>
+          <p class="how_card-text">
+            See who's hosting local events for all the things you love
+          </p>
+          <a class="how_card-link" href="#">Search events and groups</a>
+        </div>
+      </article>
+
+      <article class="how_card">
+        <img src="./source/icons/plus-big.png" alt="">
+        <div class="how_content">
+          <h3 class="how_card-title">Start a group to host events</h3>
+          <p class="how_card-text">
+            Create your own Meetup group, and draw from a community of millions
+          </p>
+          <a class="how_card-link" href="#">Start a group</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section class="stories">
+  <div class="stories_container">
+    <h2 class="stories_title">Friendships are made on Meetup</h2>
+
+    <p class="stories_text">
+      Since 2002, members have used Meetup to make new friends, meet like-minded people, spend time on hobbies, and connect with locals over shared interests. Learn how.
+    </p>
+
+    <div class="stories_grid">
+      <article class="story_card">
+        <img src="./source/images/story-1.png" alt="Brunch story">
+        <h3 class="story_card-title">I Used Meetup to Make Friends at Brunch</h3>
+        <p class="story_card-text">
+          New Jersey-based writer and college student Brianna Stryker wanted to meet friends in her hometown. Learn how she used Meetup to make connections by joining a Girls Night Out Meetup group.
+        </p>
+        <a class="story_card-link" href="#">Read more</a>
+      </article>
+
+      <article class="story_card">
+        <img src="./source/images/story-2.png" alt="Casual connections story">
+        <h3 class="story_card-title">How to Turn Casual Connections into Close Friendships</h3>
+        <p class="story_card-text">
+          It’s proven that close friendships are harder to make as an adult. But don’t sweat it: here’s what you can do to simplify the process.
+        </p>
+        <a class="story_card-link" href="#">Read more</a>
+      </article>
+
+      <article class="story_card">
+        <img src="./source/images/story-3.png" alt="Right number of friends story">
+        <h3 class="story_card-title">Do You Have the “Right” Number of Friends?</h3>
+        <p class="story_card-text">
+          Studies from around the world have tried to help people answer this question. Learn about the three tiers of friendship and how to fulfill them.
+        </p>
+        <a class="story_card-link" href="#">Read more</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer_container">
+
+    <div class="footer_top">
+      <p class="footer_top-text">Create your own Meetup group.</p>
+      <a class="footer_top-btn" href="#">Get Started</a>
+    </div>
+
+    <div class="footer_links">
+      <div class="footer_column">
+        <h3>Your Account</h3>
+        <a href="#">Sign up</a>
+        <a href="#">Log in</a>
+        <a href="#">Help</a>
+        <a href="#">Become an Affiliate</a>
+      </div>
+
+      <div class="footer_column">
+        <h3>Discover</h3>
+        <a href="#">Groups</a>
+        <a href="#">Calendar</a>
+        <a href="#">Topics</a>
+        <a href="#">Cities</a>
+        <a href="#">Online Events</a>
+        <a href="#">Local Guides</a>
+        <a href="#">Make Friends</a>
+      </div>
+
+      <div class="footer_column">
+        <h3>Meetup</h3>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Meetup Pro</a>
+        <a href="#">Careers</a>
+        <a href="#">Apps</a>
+        <a href="#">Podcast</a>
+      </div>
+    </div>
+
+    <div class="footer_socials">
+      <div class="footer_socials-left">
+        <p class="footer_socials-title">Follow us</p>
+
+        <div class="footer_icons">
+          <img src="./source/icons/facebook.png" alt="Facebook">
+          <img src="./source/icons/twitter.png" alt="Twitter">
+          <img src="./source/icons/youtube.png" alt="YouTube">
+          <img src="./source/icons/instagram.png" alt="Instagram">
+          <img src="./source/icons/tiktok.png" alt="TikTok">
+        </div>
+      </div>
+
+      <div class="footer_apps">
+        <img src="./source/icons/google-play.png" alt="Google Play">
+        <img src="./source/icons/app-store.png" alt="App Store">
+      </div>
+    </div>
+
+    <div class="footer_bottom">
+      <span>© 2024 Meetup</span>
+      <a href="#">Terms of Service</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Do Not Sell or Share My Personal Data</a>
+      <a href="#">Cookie Policy</a>
+      <a href="#">Help</a>
+    </div>
+
+  </div>
+</footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
